@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="copyright" content="http://arnaud-tessier.fr">
+    <meta name="geo.placename" content="Bordeaux, Gironde">
+    <meta name="geo.region" content="FR">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Blog pour tester du JavaScript">
+    <meta name="keywords" content="Blog, JavaScript">
+    <meta name="author" content="Arnaud TESSIER">
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4ad0d4ad54.js" crossorigin="anonymous"></script>
+
+    <!-- Titre -->
+    <title>Arnaud's Blog - Ajouter un article</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="header-brand" href="./index.html">Arnaud's Blog</a>
+        <div class="header-menu">
+          <ul>
+            <li>
+              <a href="./index.html" class="header-nav">Accueil</a>
+            </li>
+            <li>
+              <a href="./form.html" class="header-nav active">Créer un article</a>
+            </li>
+          </ul>
+          <div class="header-menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <form>
+          <h2 class="title-underline">Ajouter un article</h2>
+          <div class="form-group">
+            <label>Auteur</label>
+            <input type="text" name="author" />
+          </div>
+          <div class="form-group">
+            <label>Image de l'auteur</label>
+            <input type="url" name="img" />
+          </div>
+          <div class="form-group">
+            <label>Categorie</label>
+            <input type="text" name="category" />
+          </div>
+          <div class="form-group">
+            <label>Titre</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="form-group">
+            <label>Contenu de l'article</label>
+            <textarea name="content"></textarea>
+          </div>
+          <ul class="text-error" id="errors"></ul>
+          <div class="form-btn-container">
+            <button type="button" class="btn btn-secondary">Annuler</button>
+            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <p>© Arnaud TESSIER</p>
+        <div id="mentions-bottom">
+          <div>
+              <p>Ce site est "smartphone-responsive" et a été entièrement réalisé manuellement à l'aide des technologies suivantes:<br</p>
+          </div>
+          <div class="footer-techno">
+              <img src="./../assets/images/html5.png" alt="HTML5" title="HTML5">
+              <img src="./../assets/images/css3.png" alt="CSS3" title="CSS3">
+              <img src="./../assets/images/sass.png" alt="Sass" title="Sass">
+              <img src="./../assets/images/javascript.png" alt="JavaScript" title="JavaScript">
+          </div>
+      </div>
+      </footer>
+    </div>
+  <script src="form.bundle.js"></script><script src="topbar.bundle.js"></script></body>
+</html>
